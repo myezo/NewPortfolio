@@ -1,17 +1,32 @@
+body{
+      background-image: url('../images/new_year.png')
+}
+
 .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 15px;
-      letter-spacing: 4px;
-      font-weight: bold;
-      transition: top 0.2s ease-in-out;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 0px;
+      z-index: 99;
+}
+
+.navbar-inverse .navbar-brand{
+      color : white;
+      font-size: 20px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+      color : white;
+      font-size: 18px;
+      font-family: "ubuntu";
 }
 
 #main-img {
-      background-image: url('../images/bg.jpg');
+      background-image: url('../images/ls2.jpg');
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -23,6 +38,11 @@
 #web-dev {
       font-size: 50px;
       font-weight: bold;
+      color: white;
+}
+
+#icons{
+      color: white;
 }
 
 .row{
@@ -72,6 +92,16 @@ a{
       text-align: center;
 }
 
+#skills{
+      background-color: white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+}
+
+#skillstitle{
+      color: #33BBFF;
+}
+
 .skills-div {
       padding: .75em;
       display: flex;
@@ -86,18 +116,25 @@ a{
       list-style: none;
       margin: 0 auto;
       padding: 0;
-      width: 720px;
+      width: 880px;
 }
+
 #skills-list li {
       float: left;
       padding: 20px;
 }
 .tech-img {
-      width: 80px;
-      height: 80px;
+      width: 100px;
+      height: 100px;
       padding: 5px;
-      -webkit-box-shadow: 5px 5px 5px #111;
-      box-shadow: 5px 5px 5px #111;
+}
+
+.projects{
+      background-color: white;
+      border: 1px solid black;
+      margin: 10px;
+      width: 370px;
+      height: 400px;
 }
 
 #projectsDiv{
@@ -109,6 +146,12 @@ a{
       font-weight: bold;
 }
 
+#proj-btn{
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 16px;
+}
+
 .pro-descript{
       text-align: center;
 }
@@ -117,11 +160,34 @@ a{
       background-color: #F0F0F0;
 }
 
+#resume-img {
+      background-image: url('../images/gtasky.jpg');
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      margin-top: 40px;
+}
+
+#resume-border{
+      text-align: center;
+      background-color: white;
+      border: 1px solid black;
+      padding: 15px;
+}
+
+#resume{
+      font-weight: bold;
+}
+
 #myProjects{
       text-align: center;
       font-size: 35px;
       font-weight: bold;
       font-family: "Tahoma";
+      color: #33BBFF;
 }
 
 #image-div{
@@ -129,8 +195,8 @@ a{
 }
 
 .project-img{
-      width: 350px;
-      height: 200px;
+      width: 330px;
+      height: 180px;
 }
 
 #footer{
@@ -141,6 +207,7 @@ a{
 
 .smallFooter{
       padding: 20px;
+      font-weight: bold;
 }
 
 @media only screen and (max-width: 768px){
