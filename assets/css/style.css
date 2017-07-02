@@ -37,7 +37,7 @@ body{
 
 
 #main-img {
-      background-image: url('../images/ls2.jpg');
+      background-image: url('../images/bg.jpg');
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -50,15 +50,11 @@ body{
 #web-dev {
       font-size: 50px;
       font-weight: bold;
-      color: white;
+      color: #2A2A2A;
 }
 
 #icons{
-      color: white;
-}
-
-.row{
-      padding-top: 10px;
+      color: #2A2A2A;
 }
 
 a{
@@ -150,10 +146,16 @@ a{
       padding: 20px;
 }
 .tech-img {
+      /*
       width: 120px;
-      height: 120px;
-      padding: 5px;
+      height: 170px;*/
+      padding: 15px;
       box-shadow: 5px 5px 5px #888888;
+}
+
+#resume-btn{
+  color: white;
+  background-color: #4db6ac;
 }
 
 .projects{
@@ -165,6 +167,10 @@ a{
       height: 400px;
 }
 
+#card{
+  border: 1px solid black;
+}
+
 #projectsDiv{
       margin-top: 60px;
 }
@@ -172,6 +178,8 @@ a{
 .project-head{
       text-align: center;
       font-weight: bold;
+      font-size: 30px;
+      padding: 10px;
 }
 
 #proj-btn{
@@ -191,7 +199,10 @@ a{
 
 #resume-img {
       background-image: url('../images/lambo.jpg');
-      max-width: 100%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
       width: 100%;
       height: auto !important;
       margin-top: 35px;
